@@ -1,0 +1,1319 @@
+Making all in data
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data'
+Making all in l10n
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+Making all in fonts
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data'
+Making all in include
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/include'
+(CDPATH="${ZSH_VERSION+.}:" && cd .. && /bin/bash '/workspaces/BZFlag-Dev-bzflag/misc/missing' autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd .. && /bin/bash ./config.status include/config.h
+config.status: creating include/config.h
+config.status: include/config.h is unchanged
+make  all-am
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/include'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/include'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/include'
+Making all in man
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/man'
+sed -e 's|@BUILD_DATE[@]|2026-01-20|g' -e 's|@PACKAGE_STRING[@]|BZFlag 2.4.31|g' -e 's|@INSTALL_DATA_DIR[@]|/usr/local/share/bzflag|g' './bzadmin.6.in' >bzadmin.6
+sed -e 's|@BUILD_DATE[@]|2026-01-20|g' -e 's|@PACKAGE_STRING[@]|BZFlag 2.4.31|g' -e 's|@INSTALL_DATA_DIR[@]|/usr/local/share/bzflag|g' './bzflag.6.in' >bzflag.6
+sed -e 's|@BUILD_DATE[@]|2026-01-20|g' -e 's|@PACKAGE_STRING[@]|BZFlag 2.4.31|g' -e 's|@INSTALL_DATA_DIR[@]|/usr/local/share/bzflag|g' './bzfs.6.in' >bzfs.6
+sed -e 's|@BUILD_DATE[@]|2026-01-20|g' -e 's|@PACKAGE_STRING[@]|BZFlag 2.4.31|g' -e 's|@INSTALL_DATA_DIR[@]|/usr/local/share/bzflag|g' './bzw.5.in' >bzw.5
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/man'
+Making all in package
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/package'
+Making all in src
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src'
+Making all in 3D
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+depbase=`echo FontManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FontManager.lo -MD -MP -MF $depbase.Tpo -c -o FontManager.lo FontManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ImageFont.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ImageFont.lo -MD -MP -MF $depbase.Tpo -c -o ImageFont.lo ImageFont.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TextureFont.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TextureFont.lo -MD -MP -MF $depbase.Tpo -c -o TextureFont.lo TextureFont.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TextureManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TextureManager.lo -MD -MP -MF $depbase.Tpo -c -o TextureManager.lo TextureManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o lib3D.la  FontManager.lo ImageFont.lo TextureFont.lo TextureManager.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+Making all in common
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+depbase=`echo AccessList.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AccessList.lo -MD -MP -MF $depbase.Tpo -c -o AccessList.lo AccessList.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo AutoCompleter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AutoCompleter.lo -MD -MP -MF $depbase.Tpo -c -o AutoCompleter.lo AutoCompleter.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzPNG.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzPNG.lo -MD -MP -MF $depbase.Tpo -c -o BzPNG.lo BzPNG.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BZDBCache.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZDBCache.lo -MD -MP -MF $depbase.Tpo -c -o BZDBCache.lo BZDBCache.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BZDBLocal.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZDBLocal.lo -MD -MP -MF $depbase.Tpo -c -o BZDBLocal.lo BZDBLocal.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Bundle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Bundle.lo -MD -MP -MF $depbase.Tpo -c -o Bundle.lo Bundle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BundleMgr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BundleMgr.lo -MD -MP -MF $depbase.Tpo -c -o BundleMgr.lo BundleMgr.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo CommandManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CommandManager.lo -MD -MP -MF $depbase.Tpo -c -o CommandManager.lo CommandManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ConfigFileManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ConfigFileManager.lo -MD -MP -MF $depbase.Tpo -c -o ConfigFileManager.lo ConfigFileManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Country.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Country.lo -MD -MP -MF $depbase.Tpo -c -o Country.lo Country.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ErrorHandler.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ErrorHandler.lo -MD -MP -MF $depbase.Tpo -c -o ErrorHandler.lo ErrorHandler.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo FileManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FileManager.lo -MD -MP -MF $depbase.Tpo -c -o FileManager.lo FileManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Flag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Flag.lo -MD -MP -MF $depbase.Tpo -c -o Flag.lo Flag.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo GameTime.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT GameTime.lo -MD -MP -MF $depbase.Tpo -c -o GameTime.lo GameTime.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo KeyManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT KeyManager.lo -MD -MP -MF $depbase.Tpo -c -o KeyManager.lo KeyManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Language.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Language.lo -MD -MP -MF $depbase.Tpo -c -o Language.lo Language.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OSFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OSFile.lo -MD -MP -MF $depbase.Tpo -c -o OSFile.lo OSFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ParseColor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ParseColor.lo -MD -MP -MF $depbase.Tpo -c -o ParseColor.lo ParseColor.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PlayerState.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PlayerState.lo -MD -MP -MF $depbase.Tpo -c -o PlayerState.lo PlayerState.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ShotUpdate.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotUpdate.lo -MD -MP -MF $depbase.Tpo -c -o ShotUpdate.lo ShotUpdate.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo StateDatabase.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT StateDatabase.lo -MD -MP -MF $depbase.Tpo -c -o StateDatabase.lo StateDatabase.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Team.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Team.lo -MD -MP -MF $depbase.Tpo -c -o Team.lo Team.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TextChunkManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TextChunkManager.lo -MD -MP -MF $depbase.Tpo -c -o TextChunkManager.lo TextChunkManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TextUtils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TextUtils.lo -MD -MP -MF $depbase.Tpo -c -o TextUtils.lo TextUtils.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TimeKeeper.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TimeKeeper.lo -MD -MP -MF $depbase.Tpo -c -o TimeKeeper.lo TimeKeeper.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo VotingBooth.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT VotingBooth.lo -MD -MP -MF $depbase.Tpo -c -o VotingBooth.lo VotingBooth.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo WordFilter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WordFilter.lo -MD -MP -MF $depbase.Tpo -c -o WordFilter.lo WordFilter.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bz_Locale.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bz_Locale.lo -MD -MP -MF $depbase.Tpo -c -o bz_Locale.lo bz_Locale.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bzfio.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfio.lo -MD -MP -MF $depbase.Tpo -c -o bzfio.lo bzfio.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bzglob.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzglob.lo -MD -MP -MF $depbase.Tpo -c -o bzglob.lo bzglob.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bzsignal.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzsignal.lo -MD -MP -MF $depbase.Tpo -c -o bzsignal.lo bzsignal.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo cURLManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT cURLManager.lo -MD -MP -MF $depbase.Tpo -c -o cURLManager.lo cURLManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo global.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT global.lo -MD -MP -MF $depbase.Tpo -c -o global.lo global.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo mathRoutine.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT mathRoutine.lo -MD -MP -MF $depbase.Tpo -c -o mathRoutine.lo mathRoutine.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo md5.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT md5.lo -MD -MP -MF $depbase.Tpo -c -o md5.lo md5.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo messages.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT messages.lo -MD -MP -MF $depbase.Tpo -c -o messages.lo messages.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libCommon.la  AccessList.lo AutoCompleter.lo BzPNG.lo BZDBCache.lo BZDBLocal.lo Bundle.lo BundleMgr.lo CommandManager.lo ConfigFileManager.lo Country.lo ErrorHandler.lo FileManager.lo Flag.lo GameTime.lo KeyManager.lo Language.lo OSFile.lo ParseColor.lo PlayerState.lo ShotUpdate.lo StateDatabase.lo Team.lo TextChunkManager.lo TextUtils.lo TimeKeeper.lo VotingBooth.lo WordFilter.lo bz_Locale.lo bzfio.lo bzglob.lo bzsignal.lo cURLManager.lo global.lo mathRoutine.lo md5.lo messages.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+Making all in net
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+depbase=`echo Address.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT Address.lo -MD -MP -MF $depbase.Tpo -c -o Address.lo Address.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo AresHandler.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT AresHandler.lo -MD -MP -MF $depbase.Tpo -c -o AresHandler.lo AresHandler.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Pack.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT Pack.lo -MD -MP -MF $depbase.Tpo -c -o Pack.lo Pack.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Ping.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT Ping.lo -MD -MP -MF $depbase.Tpo -c -o Ping.lo Ping.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo multicast.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT multicast.lo -MD -MP -MF $depbase.Tpo -c -o multicast.lo multicast.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo network.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -MT network.lo -MD -MP -MF $depbase.Tpo -c -o network.lo network.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations  -g -O2 -static  -o libNet.la  Address.lo AresHandler.lo Pack.lo Ping.lo multicast.lo network.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+Making all in game
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+depbase=`echo BzMaterial.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzMaterial.lo -MD -MP -MF $depbase.Tpo -c -o BzMaterial.lo BzMaterial.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo CacheManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CacheManager.lo -MD -MP -MF $depbase.Tpo -c -o CacheManager.lo CacheManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo CollisionManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CollisionManager.lo -MD -MP -MF $depbase.Tpo -c -o CollisionManager.lo CollisionManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo CommandsStandard.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CommandsStandard.lo -MD -MP -MF $depbase.Tpo -c -o CommandsStandard.lo CommandsStandard.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo DirectoryNames.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT DirectoryNames.lo -MD -MP -MF $depbase.Tpo -c -o DirectoryNames.lo DirectoryNames.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo DynamicColor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT DynamicColor.lo -MD -MP -MF $depbase.Tpo -c -o DynamicColor.lo DynamicColor.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Frustum.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Frustum.lo -MD -MP -MF $depbase.Tpo -c -o Frustum.lo Frustum.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Intersect.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Intersect.lo -MD -MP -MF $depbase.Tpo -c -o Intersect.lo Intersect.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo LagInfo.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT LagInfo.lo -MD -MP -MF $depbase.Tpo -c -o LagInfo.lo LagInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo LinkManager.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT LinkManager.lo -MD -MP -MF $depbase.Tpo -c -o LinkManager.lo LinkManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MsgStrings.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MsgStrings.lo -MD -MP -MF $depbase.Tpo -c -o MsgStrings.lo MsgStrings.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshTransform.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshTransform.lo -MD -MP -MF $depbase.Tpo -c -o MeshTransform.lo MeshTransform.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo NetHandler.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT NetHandler.lo -MD -MP -MF $depbase.Tpo -c -o NetHandler.lo NetHandler.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PhysicsDriver.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PhysicsDriver.lo -MD -MP -MF $depbase.Tpo -c -o PhysicsDriver.lo PhysicsDriver.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PlayerInfo.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PlayerInfo.lo -MD -MP -MF $depbase.Tpo -c -o PlayerInfo.lo PlayerInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Ray.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Ray.lo -MD -MP -MF $depbase.Tpo -c -o Ray.lo Ray.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ServerItem.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerItem.lo -MD -MP -MF $depbase.Tpo -c -o ServerItem.lo ServerItem.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ServerAuth.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerAuth.lo -MD -MP -MF $depbase.Tpo -c -o ServerAuth.lo ServerAuth.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ServerList.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerList.lo -MD -MP -MF $depbase.Tpo -c -o ServerList.lo ServerList.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ServerListCache.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerListCache.lo -MD -MP -MF $depbase.Tpo -c -o ServerListCache.lo ServerListCache.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo StartupInfo.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT StartupInfo.lo -MD -MP -MF $depbase.Tpo -c -o StartupInfo.lo StartupInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TextureMatrix.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TextureMatrix.lo -MD -MP -MF $depbase.Tpo -c -o TextureMatrix.lo TextureMatrix.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libGame.la  BzMaterial.lo CacheManager.lo CollisionManager.lo CommandsStandard.lo DirectoryNames.lo DynamicColor.lo Frustum.lo Intersect.lo LagInfo.lo LinkManager.lo MsgStrings.lo MeshTransform.lo NetHandler.lo PhysicsDriver.lo PlayerInfo.lo Ray.lo ServerItem.lo ServerAuth.lo ServerList.lo ServerListCache.lo StartupInfo.lo TextureMatrix.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+Making all in geometry
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+Making all in models
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+Making all in tank
+make[4]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+depbase=`echo high_barrel.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT high_barrel.lo -MD -MP -MF $depbase.Tpo -c -o high_barrel.lo high_barrel.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo high_body.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT high_body.lo -MD -MP -MF $depbase.Tpo -c -o high_body.lo high_body.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo high_ltread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT high_ltread.lo -MD -MP -MF $depbase.Tpo -c -o high_ltread.lo high_ltread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo high_rtread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT high_rtread.lo -MD -MP -MF $depbase.Tpo -c -o high_rtread.lo high_rtread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo high_turret.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT high_turret.lo -MD -MP -MF $depbase.Tpo -c -o high_turret.lo high_turret.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo low_barrel.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT low_barrel.lo -MD -MP -MF $depbase.Tpo -c -o low_barrel.lo low_barrel.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo low_body.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT low_body.lo -MD -MP -MF $depbase.Tpo -c -o low_body.lo low_body.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo low_ltread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT low_ltread.lo -MD -MP -MF $depbase.Tpo -c -o low_ltread.lo low_ltread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo low_rtread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT low_rtread.lo -MD -MP -MF $depbase.Tpo -c -o low_rtread.lo low_rtread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo low_turret.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT low_turret.lo -MD -MP -MF $depbase.Tpo -c -o low_turret.lo low_turret.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo medium_body.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT medium_body.lo -MD -MP -MF $depbase.Tpo -c -o medium_body.lo medium_body.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo medium_ltread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT medium_ltread.lo -MD -MP -MF $depbase.Tpo -c -o medium_ltread.lo medium_ltread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo medium_rtread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT medium_rtread.lo -MD -MP -MF $depbase.Tpo -c -o medium_rtread.lo medium_rtread.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo medium_turret.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../../../include   -I../../../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT medium_turret.lo -MD -MP -MF $depbase.Tpo -c -o medium_turret.lo medium_turret.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libTank.la  high_barrel.lo high_body.lo high_ltread.lo high_rtread.lo high_turret.lo low_barrel.lo low_body.lo low_ltread.lo low_rtread.lo low_turret.lo medium_body.lo medium_ltread.lo medium_rtread.lo medium_turret.lo  -lm  -lpthread
+make[4]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+make[4]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+depbase=`echo AnimatedTreads.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AnimatedTreads.lo -MD -MP -MF $depbase.Tpo -c -o AnimatedTreads.lo AnimatedTreads.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BillboardSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BillboardSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o BillboardSceneNode.lo BillboardSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BoltSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BoltSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o BoltSceneNode.lo BoltSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EighthDBaseSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EighthDBaseSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o EighthDBaseSceneNode.lo EighthDBaseSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EighthDBoxSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EighthDBoxSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o EighthDBoxSceneNode.lo EighthDBoxSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EighthDimSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EighthDimSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o EighthDimSceneNode.lo EighthDimSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EighthDimShellNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EighthDimShellNode.lo -MD -MP -MF $depbase.Tpo -c -o EighthDimShellNode.lo EighthDimShellNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EighthDPyrSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EighthDPyrSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o EighthDPyrSceneNode.lo EighthDPyrSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo FlagSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FlagSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o FlagSceneNode.lo FlagSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo FlagWarpSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FlagWarpSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o FlagWarpSceneNode.lo FlagWarpSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo LaserSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT LaserSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o LaserSceneNode.lo LaserSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshDrawMgr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshDrawMgr.lo -MD -MP -MF $depbase.Tpo -c -o MeshDrawMgr.lo MeshDrawMgr.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshFragSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshFragSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o MeshFragSceneNode.lo MeshFragSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshPolySceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshPolySceneNode.lo -MD -MP -MF $depbase.Tpo -c -o MeshPolySceneNode.lo MeshPolySceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshRenderNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshRenderNode.lo -MD -MP -MF $depbase.Tpo -c -o MeshRenderNode.lo MeshRenderNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o MeshSceneNode.lo MeshSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OccluderSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OccluderSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o OccluderSceneNode.lo OccluderSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PolyWallSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PolyWallSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o PolyWallSceneNode.lo PolyWallSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo QuadWallSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT QuadWallSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o QuadWallSceneNode.lo QuadWallSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SceneNode.lo -MD -MP -MF $depbase.Tpo -c -o SceneNode.lo SceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SphereSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SphereSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o SphereSceneNode.lo SphereSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TankGeometryMgr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TankGeometryMgr.lo -MD -MP -MF $depbase.Tpo -c -o TankGeometryMgr.lo TankGeometryMgr.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TankSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TankSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o TankSceneNode.lo TankSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TriWallSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TriWallSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o TriWallSceneNode.lo TriWallSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ViewFrustum.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ViewFrustum.lo -MD -MP -MF $depbase.Tpo -c -o ViewFrustum.lo ViewFrustum.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo WallSceneNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WallSceneNode.lo -MD -MP -MF $depbase.Tpo -c -o WallSceneNode.lo WallSceneNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libGeometry.la  AnimatedTreads.lo BillboardSceneNode.lo BoltSceneNode.lo EighthDBaseSceneNode.lo EighthDBoxSceneNode.lo EighthDimSceneNode.lo EighthDimShellNode.lo EighthDPyrSceneNode.lo FlagSceneNode.lo FlagWarpSceneNode.lo LaserSceneNode.lo MeshDrawMgr.lo MeshFragSceneNode.lo MeshPolySceneNode.lo MeshRenderNode.lo MeshSceneNode.lo OccluderSceneNode.lo PolyWallSceneNode.lo QuadWallSceneNode.lo SceneNode.lo SphereSceneNode.lo TankGeometryMgr.lo TankSceneNode.lo TriWallSceneNode.lo ViewFrustum.lo WallSceneNode.lo models/tank/high_barrel.lo models/tank/high_body.lo models/tank/high_ltread.lo models/tank/high_rtread.lo models/tank/high_turret.lo models/tank/low_barrel.lo models/tank/low_body.lo models/tank/low_ltread.lo models/tank/low_rtread.lo models/tank/low_turret.lo models/tank/medium_body.lo models/tank/medium_ltread.lo models/tank/medium_rtread.lo models/tank/medium_turret.lo -lm  -lpthread
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+Making all in obstacle
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+depbase=`echo BaseSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BaseSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o BaseSceneNodeGenerator.lo BaseSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BoxSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BoxSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o BoxSceneNodeGenerator.lo BoxSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo EmptySceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EmptySceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o EmptySceneNodeGenerator.lo EmptySceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ObstacleSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ObstacleSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o ObstacleSceneNodeGenerator.lo ObstacleSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PyramidSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PyramidSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o PyramidSceneNodeGenerator.lo PyramidSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TeleporterSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TeleporterSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o TeleporterSceneNodeGenerator.lo TeleporterSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo WallSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WallSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o WallSceneNodeGenerator.lo WallSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshSceneNodeGenerator.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshSceneNodeGenerator.lo -MD -MP -MF $depbase.Tpo -c -o MeshSceneNodeGenerator.lo MeshSceneNodeGenerator.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ArcObstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ArcObstacle.lo -MD -MP -MF $depbase.Tpo -c -o ArcObstacle.lo ArcObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ConeObstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ConeObstacle.lo -MD -MP -MF $depbase.Tpo -c -o ConeObstacle.lo ConeObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SphereObstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SphereObstacle.lo -MD -MP -MF $depbase.Tpo -c -o SphereObstacle.lo SphereObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BaseBuilding.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BaseBuilding.lo -MD -MP -MF $depbase.Tpo -c -o BaseBuilding.lo BaseBuilding.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BoxBuilding.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BoxBuilding.lo -MD -MP -MF $depbase.Tpo -c -o BoxBuilding.lo BoxBuilding.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshFace.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshFace.lo -MD -MP -MF $depbase.Tpo -c -o MeshFace.lo MeshFace.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshObstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshObstacle.lo -MD -MP -MF $depbase.Tpo -c -o MeshObstacle.lo MeshObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Triangulate.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Triangulate.lo -MD -MP -MF $depbase.Tpo -c -o Triangulate.lo Triangulate.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MeshDrawInfo.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MeshDrawInfo.lo -MD -MP -MF $depbase.Tpo -c -o MeshDrawInfo.lo MeshDrawInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PyramidBuilding.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PyramidBuilding.lo -MD -MP -MF $depbase.Tpo -c -o PyramidBuilding.lo PyramidBuilding.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Teleporter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Teleporter.lo -MD -MP -MF $depbase.Tpo -c -o Teleporter.lo Teleporter.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo TetraBuilding.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TetraBuilding.lo -MD -MP -MF $depbase.Tpo -c -o TetraBuilding.lo TetraBuilding.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo WallObstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WallObstacle.lo -MD -MP -MF $depbase.Tpo -c -o WallObstacle.lo WallObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Obstacle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Obstacle.lo -MD -MP -MF $depbase.Tpo -c -o Obstacle.lo Obstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ObstacleModifier.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ObstacleModifier.lo -MD -MP -MF $depbase.Tpo -c -o ObstacleModifier.lo ObstacleModifier.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ObstacleList.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ObstacleList.lo -MD -MP -MF $depbase.Tpo -c -o ObstacleList.lo ObstacleList.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ObstacleMgr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ObstacleMgr.lo -MD -MP -MF $depbase.Tpo -c -o ObstacleMgr.lo ObstacleMgr.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libObstacle.la  BaseSceneNodeGenerator.lo BoxSceneNodeGenerator.lo EmptySceneNodeGenerator.lo ObstacleSceneNodeGenerator.lo PyramidSceneNodeGenerator.lo TeleporterSceneNodeGenerator.lo WallSceneNodeGenerator.lo MeshSceneNodeGenerator.lo ArcObstacle.lo ConeObstacle.lo SphereObstacle.lo BaseBuilding.lo BoxBuilding.lo MeshFace.lo MeshObstacle.lo Triangulate.lo MeshDrawInfo.lo PyramidBuilding.lo Teleporter.lo TetraBuilding.lo WallObstacle.lo Obstacle.lo ObstacleModifier.lo ObstacleList.lo ObstacleMgr.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+Making all in ogl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+depbase=`echo OpenGLFramebuffer.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLFramebuffer.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLFramebuffer.lo OpenGLFramebuffer.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OpenGLGState.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLGState.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLGState.lo OpenGLGState.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OpenGLLight.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLLight.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLLight.lo OpenGLLight.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OpenGLMaterial.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLMaterial.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLMaterial.lo OpenGLMaterial.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OpenGLTexture.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLTexture.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLTexture.lo OpenGLTexture.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo OpenGLUtils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OpenGLUtils.lo -MD -MP -MF $depbase.Tpo -c -o OpenGLUtils.lo OpenGLUtils.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo RenderNode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RenderNode.lo -MD -MP -MF $depbase.Tpo -c -o RenderNode.lo RenderNode.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libGLKit.la  OpenGLFramebuffer.lo OpenGLGState.lo OpenGLLight.lo OpenGLMaterial.lo OpenGLTexture.lo OpenGLUtils.lo RenderNode.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+Making all in scene
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+depbase=`echo Occluder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Occluder.lo -MD -MP -MF $depbase.Tpo -c -o Occluder.lo Occluder.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo Octree.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Octree.lo -MD -MP -MF $depbase.Tpo -c -o Octree.lo Octree.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SceneDatabase.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SceneDatabase.lo -MD -MP -MF $depbase.Tpo -c -o SceneDatabase.lo SceneDatabase.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ZSceneDatabase.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ZSceneDatabase.lo -MD -MP -MF $depbase.Tpo -c -o ZSceneDatabase.lo ZSceneDatabase.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BSPSceneDatabase.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BSPSceneDatabase.lo -MD -MP -MF $depbase.Tpo -c -o BSPSceneDatabase.lo BSPSceneDatabase.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libSceneDB.la  Occluder.lo Octree.lo SceneDatabase.lo ZSceneDatabase.lo BSPSceneDatabase.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+Making all in platform
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+depbase=`echo PlatformFactory.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PlatformFactory.lo -MD -MP -MF $depbase.Tpo -c -o PlatformFactory.lo PlatformFactory.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzfDisplay.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzfDisplay.lo -MD -MP -MF $depbase.Tpo -c -o BzfDisplay.lo BzfDisplay.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzfJoystick.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzfJoystick.lo -MD -MP -MF $depbase.Tpo -c -o BzfJoystick.lo BzfJoystick.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzfVisual.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzfVisual.lo -MD -MP -MF $depbase.Tpo -c -o BzfVisual.lo BzfVisual.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzfWindow.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzfWindow.lo -MD -MP -MF $depbase.Tpo -c -o BzfWindow.lo BzfWindow.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo BzfMedia.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BzfMedia.lo -MD -MP -MF $depbase.Tpo -c -o BzfMedia.lo BzfMedia.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDLJoystick.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDLJoystick.lo -MD -MP -MF $depbase.Tpo -c -o SDLJoystick.lo SDLJoystick.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDLPlatformFactory.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDLPlatformFactory.lo -MD -MP -MF $depbase.Tpo -c -o SDLPlatformFactory.lo SDLPlatformFactory.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDLMedia.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDLMedia.lo -MD -MP -MF $depbase.Tpo -c -o SDLMedia.lo SDLMedia.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDL2Display.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDL2Display.lo -MD -MP -MF $depbase.Tpo -c -o SDL2Display.lo SDL2Display.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDL2Visual.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDL2Visual.lo -MD -MP -MF $depbase.Tpo -c -o SDL2Visual.lo SDL2Visual.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SDL2Window.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SDL2Window.lo -MD -MP -MF $depbase.Tpo -c -o SDL2Window.lo SDL2Window.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libPlatform.la  PlatformFactory.lo BzfDisplay.lo BzfJoystick.lo BzfVisual.lo BzfWindow.lo BzfMedia.lo SDLJoystick.lo SDLPlatformFactory.lo SDLMedia.lo SDL2Display.lo SDL2Visual.lo SDL2Window.lo   -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+Making all in mediafile
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+depbase=`echo ImageFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ImageFile.lo -MD -MP -MF $depbase.Tpo -c -o ImageFile.lo ImageFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo MediaFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MediaFile.lo -MD -MP -MF $depbase.Tpo -c -o MediaFile.lo MediaFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo PNGImageFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT PNGImageFile.lo -MD -MP -MF $depbase.Tpo -c -o PNGImageFile.lo PNGImageFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo SGIImageFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SGIImageFile.lo -MD -MP -MF $depbase.Tpo -c -o SGIImageFile.lo SGIImageFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo AudioFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AudioFile.lo -MD -MP -MF $depbase.Tpo -c -o AudioFile.lo AudioFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo WaveAudioFile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\"  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WaveAudioFile.lo -MD -MP -MF $depbase.Tpo -c -o WaveAudioFile.lo WaveAudioFile.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libMediaFile.la  ImageFile.lo MediaFile.lo PNGImageFile.lo SGIImageFile.lo AudioFile.lo WaveAudioFile.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+Making all in date
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+depbase=`echo buildDate.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT buildDate.lo -MD -MP -MF $depbase.Tpo -c -o buildDate.lo buildDate.cxx &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o libDate.la  buildDate.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+Making all in bzfs
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+depbase=`echo bzfsPlugins.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfsPlugins.o -MD -MP -MF $depbase.Tpo -c -o bzfsPlugins.o bzfsPlugins.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo AccessControlList.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AccessControlList.o -MD -MP -MF $depbase.Tpo -c -o AccessControlList.o AccessControlList.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Authentication.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Authentication.o -MD -MP -MF $depbase.Tpo -c -o Authentication.o Authentication.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BanCommands.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BanCommands.o -MD -MP -MF $depbase.Tpo -c -o BanCommands.o BanCommands.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo base64.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT base64.o -MD -MP -MF $depbase.Tpo -c -o base64.o base64.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo bzfsAPI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfsAPI.o -MD -MP -MF $depbase.Tpo -c -o bzfsAPI.o bzfsAPI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo bzfsHTTPAPI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfsHTTPAPI.o -MD -MP -MF $depbase.Tpo -c -o bzfsHTTPAPI.o bzfsHTTPAPI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BZWError.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZWError.o -MD -MP -MF $depbase.Tpo -c -o BZWError.o BZWError.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BZWReader.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZWReader.o -MD -MP -MF $depbase.Tpo -c -o BZWReader.o BZWReader.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CmdLineOptions.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CmdLineOptions.o -MD -MP -MF $depbase.Tpo -c -o CmdLineOptions.o CmdLineOptions.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomArc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomArc.o -MD -MP -MF $depbase.Tpo -c -o CustomArc.o CustomArc.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomBase.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomBase.o -MD -MP -MF $depbase.Tpo -c -o CustomBase.o CustomBase.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomBox.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomBox.o -MD -MP -MF $depbase.Tpo -c -o CustomBox.o CustomBox.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomCone.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomCone.o -MD -MP -MF $depbase.Tpo -c -o CustomCone.o CustomCone.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomDynamicColor.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomDynamicColor.o -MD -MP -MF $depbase.Tpo -c -o CustomDynamicColor.o CustomDynamicColor.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomGate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomGate.o -MD -MP -MF $depbase.Tpo -c -o CustomGate.o CustomGate.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomGroup.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomGroup.o -MD -MP -MF $depbase.Tpo -c -o CustomGroup.o CustomGroup.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomLink.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomLink.o -MD -MP -MF $depbase.Tpo -c -o CustomLink.o CustomLink.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomMaterial.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomMaterial.o -MD -MP -MF $depbase.Tpo -c -o CustomMaterial.o CustomMaterial.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomMesh.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomMesh.o -MD -MP -MF $depbase.Tpo -c -o CustomMesh.o CustomMesh.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomMeshFace.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomMeshFace.o -MD -MP -MF $depbase.Tpo -c -o CustomMeshFace.o CustomMeshFace.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomMeshTransform.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomMeshTransform.o -MD -MP -MF $depbase.Tpo -c -o CustomMeshTransform.o CustomMeshTransform.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomPhysicsDriver.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomPhysicsDriver.o -MD -MP -MF $depbase.Tpo -c -o CustomPhysicsDriver.o CustomPhysicsDriver.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomSphere.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomSphere.o -MD -MP -MF $depbase.Tpo -c -o CustomSphere.o CustomSphere.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomTextureMatrix.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomTextureMatrix.o -MD -MP -MF $depbase.Tpo -c -o CustomTextureMatrix.o CustomTextureMatrix.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomPyramid.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomPyramid.o -MD -MP -MF $depbase.Tpo -c -o CustomPyramid.o CustomPyramid.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomTetra.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomTetra.o -MD -MP -MF $depbase.Tpo -c -o CustomTetra.o CustomTetra.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomWaterLevel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomWaterLevel.o -MD -MP -MF $depbase.Tpo -c -o CustomWaterLevel.o CustomWaterLevel.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomWeapon.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomWeapon.o -MD -MP -MF $depbase.Tpo -c -o CustomWeapon.o CustomWeapon.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomWorld.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomWorld.o -MD -MP -MF $depbase.Tpo -c -o CustomWorld.o CustomWorld.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CustomZone.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomZone.o -MD -MP -MF $depbase.Tpo -c -o CustomZone.o CustomZone.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DropGeometry.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT DropGeometry.o -MD -MP -MF $depbase.Tpo -c -o DropGeometry.o DropGeometry.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo EntryZones.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EntryZones.o -MD -MP -MF $depbase.Tpo -c -o EntryZones.o EntryZones.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Filter.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Filter.o -MD -MP -MF $depbase.Tpo -c -o Filter.o Filter.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo FlagHistory.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FlagHistory.o -MD -MP -MF $depbase.Tpo -c -o FlagHistory.o FlagHistory.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo FlagInfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FlagInfo.o -MD -MP -MF $depbase.Tpo -c -o FlagInfo.o FlagInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo GameKeeper.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT GameKeeper.o -MD -MP -MF $depbase.Tpo -c -o GameKeeper.o GameKeeper.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ListServerConnection.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ListServerConnection.o -MD -MP -MF $depbase.Tpo -c -o ListServerConnection.o ListServerConnection.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo MasterBanList.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MasterBanList.o -MD -MP -MF $depbase.Tpo -c -o MasterBanList.o MasterBanList.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ParseMaterial.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ParseMaterial.o -MD -MP -MF $depbase.Tpo -c -o ParseMaterial.o ParseMaterial.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Permissions.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Permissions.o -MD -MP -MF $depbase.Tpo -c -o Permissions.o Permissions.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RandomSpawnPolicy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RandomSpawnPolicy.o -MD -MP -MF $depbase.Tpo -c -o RandomSpawnPolicy.o RandomSpawnPolicy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RecordReplay.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RecordReplay.o -MD -MP -MF $depbase.Tpo -c -o RecordReplay.o RecordReplay.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RejoinList.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RejoinList.o -MD -MP -MF $depbase.Tpo -c -o RejoinList.o RejoinList.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Score.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Score.o -MD -MP -MF $depbase.Tpo -c -o Score.o Score.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerCommand.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerCommand.o -MD -MP -MF $depbase.Tpo -c -o ServerCommand.o ServerCommand.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerSidePlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerSidePlayer.o -MD -MP -MF $depbase.Tpo -c -o ServerSidePlayer.o ServerSidePlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotManager.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotManager.o -MD -MP -MF $depbase.Tpo -c -o ShotManager.o ShotManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SpawnPolicy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SpawnPolicy.o -MD -MP -MF $depbase.Tpo -c -o SpawnPolicy.o SpawnPolicy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SpawnPosition.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SpawnPosition.o -MD -MP -MF $depbase.Tpo -c -o SpawnPosition.o SpawnPosition.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo TeamBases.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TeamBases.o -MD -MP -MF $depbase.Tpo -c -o TeamBases.o TeamBases.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo VotingArbiter.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT VotingArbiter.o -MD -MP -MF $depbase.Tpo -c -o VotingArbiter.o VotingArbiter.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldFileLocation.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldFileLocation.o -MD -MP -MF $depbase.Tpo -c -o WorldFileLocation.o WorldFileLocation.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldFileObject.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldFileObject.o -MD -MP -MF $depbase.Tpo -c -o WorldFileObject.o WorldFileObject.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldFileObstacle.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldFileObstacle.o -MD -MP -MF $depbase.Tpo -c -o WorldFileObstacle.o WorldFileObstacle.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldGenerators.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldGenerators.o -MD -MP -MF $depbase.Tpo -c -o WorldGenerators.o WorldGenerators.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldInfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldInfo.o -MD -MP -MF $depbase.Tpo -c -o WorldInfo.o WorldInfo.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldWeapons.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldWeapons.o -MD -MP -MF $depbase.Tpo -c -o WorldWeapons.o WorldWeapons.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldEventManager.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldEventManager.o -MD -MP -MF $depbase.Tpo -c -o WorldEventManager.o WorldEventManager.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo commands.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT commands.o -MD -MP -MF $depbase.Tpo -c -o commands.o commands.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo bzfs.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSIDE_BZ -DINSTALL_LIB_DIR=\"/usr/local/lib/bzflag/\"   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfs.o -MD -MP -MF $depbase.Tpo -c -o bzfs.o bzfs.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -export-dynamic -static  -o bzfs bzfsPlugins.o AccessControlList.o Authentication.o BanCommands.o base64.o bzfsAPI.o bzfsHTTPAPI.o BZWError.o BZWReader.o CmdLineOptions.o CustomArc.o CustomBase.o CustomBox.o CustomCone.o CustomDynamicColor.o CustomGate.o CustomGroup.o CustomLink.o CustomMaterial.o CustomMesh.o CustomMeshFace.o CustomMeshTransform.o CustomPhysicsDriver.o CustomSphere.o CustomTextureMatrix.o CustomPyramid.o CustomTetra.o CustomWaterLevel.o CustomWeapon.o CustomWorld.o CustomZone.o DropGeometry.o EntryZones.o Filter.o FlagHistory.o FlagInfo.o GameKeeper.o ListServerConnection.o MasterBanList.o ParseMaterial.o Permissions.o RandomSpawnPolicy.o RecordReplay.o RejoinList.o Score.o ServerCommand.o ServerSidePlayer.o ShotManager.o SpawnPolicy.o SpawnPosition.o TeamBases.o VotingArbiter.o WorldFileLocation.o WorldFileObject.o WorldFileObstacle.o WorldGenerators.o WorldInfo.o WorldWeapons.o WorldEventManager.o commands.o bzfs.o ../obstacle/libObstacle.la ../game/libGame.la ../net/libNet.la ../common/libCommon.la -lcurl -lcares -lc -lz -ldl  ../date/libDate.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+Making all in bzflag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+depbase=`echo ActionBinding.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ActionBinding.o -MD -MP -MF $depbase.Tpo -c -o ActionBinding.o ActionBinding.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo AutoPilot.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT AutoPilot.o -MD -MP -MF $depbase.Tpo -c -o AutoPilot.o AutoPilot.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BackgroundRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BackgroundRenderer.o -MD -MP -MF $depbase.Tpo -c -o BackgroundRenderer.o BackgroundRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BaseLocalPlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BaseLocalPlayer.o -MD -MP -MF $depbase.Tpo -c -o BaseLocalPlayer.o BaseLocalPlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CacheMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CacheMenu.o -MD -MP -MF $depbase.Tpo -c -o CacheMenu.o CacheMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo clientConfig.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT clientConfig.o -MD -MP -MF $depbase.Tpo -c -o clientConfig.o clientConfig.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CommandsImplementation.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CommandsImplementation.o -MD -MP -MF $depbase.Tpo -c -o CommandsImplementation.o CommandsImplementation.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ComposeDefaultKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ComposeDefaultKey.o -MD -MP -MF $depbase.Tpo -c -o ComposeDefaultKey.o ComposeDefaultKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ControlPanel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ControlPanel.o -MD -MP -MF $depbase.Tpo -c -o ControlPanel.o ControlPanel.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo defaultBZDB.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT defaultBZDB.o -MD -MP -MF $depbase.Tpo -c -o defaultBZDB.o defaultBZDB.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DisplayMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT DisplayMenu.o -MD -MP -MF $depbase.Tpo -c -o DisplayMenu.o DisplayMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Downloads.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Downloads.o -MD -MP -MF $depbase.Tpo -c -o Downloads.o Downloads.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo EffectsMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EffectsMenu.o -MD -MP -MF $depbase.Tpo -c -o EffectsMenu.o EffectsMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo effectsRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT effectsRenderer.o -MD -MP -MF $depbase.Tpo -c -o effectsRenderer.o effectsRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo EntryZone.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT EntryZone.o -MD -MP -MF $depbase.Tpo -c -o EntryZone.o EntryZone.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo FlashClock.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FlashClock.o -MD -MP -MF $depbase.Tpo -c -o FlashClock.o FlashClock.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ForceFeedback.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ForceFeedback.o -MD -MP -MF $depbase.Tpo -c -o ForceFeedback.o ForceFeedback.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo FormatMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT FormatMenu.o -MD -MP -MF $depbase.Tpo -c -o FormatMenu.o FormatMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo GuidedMissleStrategy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT GuidedMissleStrategy.o -MD -MP -MF $depbase.Tpo -c -o GuidedMissleStrategy.o GuidedMissleStrategy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo GUIOptionsMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT GUIOptionsMenu.o -MD -MP -MF $depbase.Tpo -c -o GUIOptionsMenu.o GUIOptionsMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HelpMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HelpMenu.o -MD -MP -MF $depbase.Tpo -c -o HelpMenu.o HelpMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDDialog.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDDialog.o -MD -MP -MF $depbase.Tpo -c -o HUDDialog.o HUDDialog.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDDialogStack.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDDialogStack.o -MD -MP -MF $depbase.Tpo -c -o HUDDialogStack.o HUDDialogStack.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDRenderer.o -MD -MP -MF $depbase.Tpo -c -o HUDRenderer.o HUDRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDui.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDui.o -MD -MP -MF $depbase.Tpo -c -o HUDui.o HUDui.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiControl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiControl.o -MD -MP -MF $depbase.Tpo -c -o HUDuiControl.o HUDuiControl.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiDefaultKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiDefaultKey.o -MD -MP -MF $depbase.Tpo -c -o HUDuiDefaultKey.o HUDuiDefaultKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiJSTestLabel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiJSTestLabel.o -MD -MP -MF $depbase.Tpo -c -o HUDuiJSTestLabel.o HUDuiJSTestLabel.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiLabel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiLabel.o -MD -MP -MF $depbase.Tpo -c -o HUDuiLabel.o HUDuiLabel.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiList.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiList.o -MD -MP -MF $depbase.Tpo -c -o HUDuiList.o HUDuiList.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiTextureLabel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiTextureLabel.o -MD -MP -MF $depbase.Tpo -c -o HUDuiTextureLabel.o HUDuiTextureLabel.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo HUDuiTypeIn.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HUDuiTypeIn.o -MD -MP -MF $depbase.Tpo -c -o HUDuiTypeIn.o HUDuiTypeIn.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo JoystickTestMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT JoystickTestMenu.o -MD -MP -MF $depbase.Tpo -c -o JoystickTestMenu.o JoystickTestMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo JoinMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT JoinMenu.o -MD -MP -MF $depbase.Tpo -c -o JoinMenu.o JoinMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo InputMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT InputMenu.o -MD -MP -MF $depbase.Tpo -c -o InputMenu.o InputMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo KeyboardMapMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT KeyboardMapMenu.o -MD -MP -MF $depbase.Tpo -c -o KeyboardMapMenu.o KeyboardMapMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo LocalCommand.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT LocalCommand.o -MD -MP -MF $depbase.Tpo -c -o LocalCommand.o LocalCommand.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo LocalPlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT LocalPlayer.o -MD -MP -MF $depbase.Tpo -c -o LocalPlayer.o LocalPlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo MainMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MainMenu.o -MD -MP -MF $depbase.Tpo -c -o MainMenu.o MainMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo MainWindow.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MainWindow.o -MD -MP -MF $depbase.Tpo -c -o MainWindow.o MainWindow.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo MenuDefaultKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT MenuDefaultKey.o -MD -MP -MF $depbase.Tpo -c -o MenuDefaultKey.o MenuDefaultKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo motd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT motd.o -MD -MP -MF $depbase.Tpo -c -o motd.o motd.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo NewVersionMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT NewVersionMenu.o -MD -MP -MF $depbase.Tpo -c -o NewVersionMenu.o NewVersionMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo OptionsMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OptionsMenu.o -MD -MP -MF $depbase.Tpo -c -o OptionsMenu.o OptionsMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Player.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Player.o -MD -MP -MF $depbase.Tpo -c -o Player.o Player.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Plan.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Plan.o -MD -MP -MF $depbase.Tpo -c -o Plan.o Plan.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo QuickKeysMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT QuickKeysMenu.o -MD -MP -MF $depbase.Tpo -c -o QuickKeysMenu.o QuickKeysMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo QuitMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT QuitMenu.o -MD -MP -MF $depbase.Tpo -c -o QuitMenu.o QuitMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RadarRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RadarRenderer.o -MD -MP -MF $depbase.Tpo -c -o RadarRenderer.o RadarRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Region.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Region.o -MD -MP -MF $depbase.Tpo -c -o Region.o Region.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RegionPriorityQueue.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RegionPriorityQueue.o -MD -MP -MF $depbase.Tpo -c -o RegionPriorityQueue.o RegionPriorityQueue.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RemotePlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RemotePlayer.o -MD -MP -MF $depbase.Tpo -c -o RemotePlayer.o RemotePlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Roaming.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Roaming.o -MD -MP -MF $depbase.Tpo -c -o Roaming.o Roaming.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RobotPlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RobotPlayer.o -MD -MP -MF $depbase.Tpo -c -o RobotPlayer.o RobotPlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo RoofTops.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RoofTops.o -MD -MP -MF $depbase.Tpo -c -o RoofTops.o RoofTops.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Roster.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Roster.o -MD -MP -MF $depbase.Tpo -c -o Roster.o Roster.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SaveWorldMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SaveWorldMenu.o -MD -MP -MF $depbase.Tpo -c -o SaveWorldMenu.o SaveWorldMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SceneBuilder.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SceneBuilder.o -MD -MP -MF $depbase.Tpo -c -o SceneBuilder.o SceneBuilder.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SceneRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SceneRenderer.o -MD -MP -MF $depbase.Tpo -c -o SceneRenderer.o SceneRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ScoreboardRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ScoreboardRenderer.o -MD -MP -MF $depbase.Tpo -c -o ScoreboardRenderer.o ScoreboardRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SegmentedShotStrategy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SegmentedShotStrategy.o -MD -MP -MF $depbase.Tpo -c -o SegmentedShotStrategy.o SegmentedShotStrategy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerCommandKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerCommandKey.o -MD -MP -MF $depbase.Tpo -c -o ServerCommandKey.o ServerCommandKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerLink.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerLink.o -MD -MP -MF $depbase.Tpo -c -o ServerLink.o ServerLink.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerListFilter.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerListFilter.o -MD -MP -MF $depbase.Tpo -c -o ServerListFilter.o ServerListFilter.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerListFilterHelpMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerListFilterHelpMenu.o -MD -MP -MF $depbase.Tpo -c -o ServerListFilterHelpMenu.o ServerListFilterHelpMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerListFilterMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerListFilterMenu.o -MD -MP -MF $depbase.Tpo -c -o ServerListFilterMenu.o ServerListFilterMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerMenu.o -MD -MP -MF $depbase.Tpo -c -o ServerMenu.o ServerMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerStartMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerStartMenu.o -MD -MP -MF $depbase.Tpo -c -o ServerStartMenu.o ServerStartMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShockWaveStrategy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShockWaveStrategy.o -MD -MP -MF $depbase.Tpo -c -o ShockWaveStrategy.o ShockWaveStrategy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotPath.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotPath.o -MD -MP -MF $depbase.Tpo -c -o ShotPath.o ShotPath.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotPathSegment.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotPathSegment.o -MD -MP -MF $depbase.Tpo -c -o ShotPathSegment.o ShotPathSegment.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotStats.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotStats.o -MD -MP -MF $depbase.Tpo -c -o ShotStats.o ShotStats.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotStatsDefaultKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotStatsDefaultKey.o -MD -MP -MF $depbase.Tpo -c -o ShotStatsDefaultKey.o ShotStatsDefaultKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotStatistics.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotStatistics.o -MD -MP -MF $depbase.Tpo -c -o ShotStatistics.o ShotStatistics.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ShotStrategy.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ShotStrategy.o -MD -MP -MF $depbase.Tpo -c -o ShotStrategy.o ShotStrategy.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo SilenceDefaultKey.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SilenceDefaultKey.o -MD -MP -MF $depbase.Tpo -c -o SilenceDefaultKey.o SilenceDefaultKey.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo TargetingUtils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TargetingUtils.o -MD -MP -MF $depbase.Tpo -c -o TargetingUtils.o TargetingUtils.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo TrackMarks.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TrackMarks.o -MD -MP -MF $depbase.Tpo -c -o TrackMarks.o TrackMarks.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Weapon.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Weapon.o -MD -MP -MF $depbase.Tpo -c -o Weapon.o Weapon.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WeatherRenderer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WeatherRenderer.o -MD -MP -MF $depbase.Tpo -c -o WeatherRenderer.o WeatherRenderer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo World.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT World.o -MD -MP -MF $depbase.Tpo -c -o World.o World.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldBuilder.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldBuilder.o -MD -MP -MF $depbase.Tpo -c -o WorldBuilder.o WorldBuilder.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo WorldPlayer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT WorldPlayer.o -MD -MP -MF $depbase.Tpo -c -o WorldPlayer.o WorldPlayer.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo bzflag.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzflag.o -MD -MP -MF $depbase.Tpo -c -o bzflag.o bzflag.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo callbacks.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT callbacks.o -MD -MP -MF $depbase.Tpo -c -o callbacks.o callbacks.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo clientCommands.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT clientCommands.o -MD -MP -MF $depbase.Tpo -c -o clientCommands.o clientCommands.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo daylight.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT daylight.o -MD -MP -MF $depbase.Tpo -c -o daylight.o daylight.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo playing.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT playing.o -MD -MP -MF $depbase.Tpo -c -o playing.o playing.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sound.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT sound.o -MD -MP -MF $depbase.Tpo -c -o sound.o sound.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo stars.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DINSTALL_DATA_DIR=\"/usr/local/share/bzflag\" -I/usr/include/SDL2 -D_REENTRANT    -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT stars.o -MD -MP -MF $depbase.Tpo -c -o stars.o stars.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2   -o bzflag ActionBinding.o AutoPilot.o BackgroundRenderer.o BaseLocalPlayer.o CacheMenu.o clientConfig.o CommandsImplementation.o ComposeDefaultKey.o ControlPanel.o defaultBZDB.o DisplayMenu.o Downloads.o EffectsMenu.o effectsRenderer.o EntryZone.o FlashClock.o ForceFeedback.o FormatMenu.o GuidedMissleStrategy.o GUIOptionsMenu.o HelpMenu.o HUDDialog.o HUDDialogStack.o HUDRenderer.o HUDui.o HUDuiControl.o HUDuiDefaultKey.o HUDuiJSTestLabel.o HUDuiLabel.o HUDuiList.o HUDuiTextureLabel.o HUDuiTypeIn.o JoystickTestMenu.o JoinMenu.o InputMenu.o KeyboardMapMenu.o LocalCommand.o LocalPlayer.o MainMenu.o MainWindow.o MenuDefaultKey.o motd.o NewVersionMenu.o OptionsMenu.o Player.o Plan.o QuickKeysMenu.o QuitMenu.o RadarRenderer.o Region.o RegionPriorityQueue.o RemotePlayer.o Roaming.o RobotPlayer.o RoofTops.o Roster.o SaveWorldMenu.o SceneBuilder.o SceneRenderer.o ScoreboardRenderer.o SegmentedShotStrategy.o ServerCommandKey.o ServerLink.o ServerListFilter.o ServerListFilterHelpMenu.o ServerListFilterMenu.o ServerMenu.o ServerStartMenu.o ShockWaveStrategy.o ShotPath.o ShotPathSegment.o ShotStats.o ShotStatsDefaultKey.o ShotStatistics.o ShotStrategy.o SilenceDefaultKey.o TargetingUtils.o TrackMarks.o Weapon.o WeatherRenderer.o World.o WorldBuilder.o WorldPlayer.o bzflag.o callbacks.o clientCommands.o daylight.o playing.o sound.o stars.o ../3D/lib3D.la ../game/libGame.la ../net/libNet.la ../obstacle/libObstacle.la ../platform/libPlatform.la ../ogl/libGLKit.la ../scene/libSceneDB.la ../geometry/libGeometry.la ../mediafile/libMediaFile.la ../common/libCommon.la -lcares -lc -lz  -lSDL2   -lGLEW -lGLU -lGL  -lcurl  ../date/libDate.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+Making all in bzadmin
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+depbase=`echo BZAdminClient.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZAdminClient.o -MD -MP -MF $depbase.Tpo -c -o BZAdminClient.o BZAdminClient.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo BZAdminUI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT BZAdminUI.o -MD -MP -MF $depbase.Tpo -c -o BZAdminUI.o BZAdminUI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CursesUI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CursesUI.o -MD -MP -MF $depbase.Tpo -c -o CursesUI.o CursesUI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CursesMenu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CursesMenu.o -MD -MP -MF $depbase.Tpo -c -o CursesMenu.o CursesMenu.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo OptionParser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT OptionParser.o -MD -MP -MF $depbase.Tpo -c -o OptionParser.o OptionParser.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ServerLink.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT ServerLink.o -MD -MP -MF $depbase.Tpo -c -o ServerLink.o ServerLink.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo StdBothUI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT StdBothUI.o -MD -MP -MF $depbase.Tpo -c -o StdBothUI.o StdBothUI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo StdInUI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT StdInUI.o -MD -MP -MF $depbase.Tpo -c -o StdInUI.o StdInUI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo StdOutUI.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT StdOutUI.o -MD -MP -MF $depbase.Tpo -c -o StdOutUI.o StdOutUI.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo UIMap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT UIMap.o -MD -MP -MF $depbase.Tpo -c -o UIMap.o UIMap.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo bzadmin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -DBUILDING_BZADMIN   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzadmin.o -MD -MP -MF $depbase.Tpo -c -o bzadmin.o bzadmin.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -static  -o bzadmin BZAdminClient.o BZAdminUI.o CursesUI.o CursesMenu.o OptionParser.o ServerLink.o StdBothUI.o StdInUI.o StdOutUI.o UIMap.o bzadmin.o ../date/libDate.la -lncurses -ltinfo ../game/libGame.la ../net/libNet.la ../common/libCommon.la -lcurl -lcares -lc -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src'
+Making all in plugins
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+Making all in plugin_utils
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+depbase=`echo plugin_utils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT plugin_utils.lo -MD -MP -MF $depbase.Tpo -c -o plugin_utils.lo plugin_utils.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo plugin_files.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT plugin_files.lo -MD -MP -MF $depbase.Tpo -c -o plugin_files.lo plugin_files.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo plugin_groups.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT plugin_groups.lo -MD -MP -MF $depbase.Tpo -c -o plugin_groups.lo plugin_groups.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo plugin_config.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT plugin_config.lo -MD -MP -MF $depbase.Tpo -c -o plugin_config.lo plugin_config.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -avoid-version  -o libplugin_utils.la  plugin_utils.lo plugin_files.lo plugin_groups.lo plugin_config.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+Making all in airspawn
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT airspawn_la-airspawn.lo -MD -MP -MF .deps/airspawn_la-airspawn.Tpo -c -o airspawn_la-airspawn.lo `test -f 'airspawn.cpp' || echo './'`airspawn.cpp
+mv -f .deps/airspawn_la-airspawn.Tpo .deps/airspawn_la-airspawn.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o airspawn.la -rpath /usr/local/lib/bzflag airspawn_la-airspawn.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+Making all in autoFlagReset
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT autoFlagReset_la-autoFlagReset.lo -MD -MP -MF .deps/autoFlagReset_la-autoFlagReset.Tpo -c -o autoFlagReset_la-autoFlagReset.lo `test -f 'autoFlagReset.cpp' || echo './'`autoFlagReset.cpp
+mv -f .deps/autoFlagReset_la-autoFlagReset.Tpo .deps/autoFlagReset_la-autoFlagReset.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o autoFlagReset.la -rpath /usr/local/lib/bzflag autoFlagReset_la-autoFlagReset.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+Making all in bzfscron
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfscron_la-bzfscron.lo -MD -MP -MF .deps/bzfscron_la-bzfscron.Tpo -c -o bzfscron_la-bzfscron.lo `test -f 'bzfscron.cpp' || echo './'`bzfscron.cpp
+mv -f .deps/bzfscron_la-bzfscron.Tpo .deps/bzfscron_la-bzfscron.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT bzfscron_la-CronJob.lo -MD -MP -MF .deps/bzfscron_la-CronJob.Tpo -c -o bzfscron_la-CronJob.lo `test -f 'CronJob.cpp' || echo './'`CronJob.cpp
+mv -f .deps/bzfscron_la-CronJob.Tpo .deps/bzfscron_la-CronJob.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o bzfscron.la -rpath /usr/local/lib/bzflag bzfscron_la-bzfscron.lo bzfscron_la-CronJob.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+Making all in chathistory
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT chathistory_la-chathistory.lo -MD -MP -MF .deps/chathistory_la-chathistory.Tpo -c -o chathistory_la-chathistory.lo `test -f 'chathistory.cpp' || echo './'`chathistory.cpp
+mv -f .deps/chathistory_la-chathistory.Tpo .deps/chathistory_la-chathistory.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o chathistory.la -rpath /usr/local/lib/bzflag chathistory_la-chathistory.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+Making all in customflagsample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../plugins/plugin_utils -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT customflagsample_la-customflagsample.lo -MD -MP -MF .deps/customflagsample_la-customflagsample.Tpo -c -o customflagsample_la-customflagsample.lo `test -f 'customflagsample.cpp' || echo './'`customflagsample.cpp
+mv -f .deps/customflagsample_la-customflagsample.Tpo .deps/customflagsample_la-customflagsample.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o customflagsample.la -rpath /usr/local/lib/bzflag customflagsample_la-customflagsample.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+Making all in customPollTypeSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT customPollTypeSample_la-customPollTypeSample.lo -MD -MP -MF .deps/customPollTypeSample_la-customPollTypeSample.Tpo -c -o customPollTypeSample_la-customPollTypeSample.lo `test -f 'customPollTypeSample.cpp' || echo './'`customPollTypeSample.cpp
+mv -f .deps/customPollTypeSample_la-customPollTypeSample.Tpo .deps/customPollTypeSample_la-customPollTypeSample.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o customPollTypeSample.la -rpath /usr/local/lib/bzflag customPollTypeSample_la-customPollTypeSample.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+Making all in CustomZoneSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT CustomZoneSample_la-CustomZoneSample.lo -MD -MP -MF .deps/CustomZoneSample_la-CustomZoneSample.Tpo -c -o CustomZoneSample_la-CustomZoneSample.lo `test -f 'CustomZoneSample.cpp' || echo './'`CustomZoneSample.cpp
+mv -f .deps/CustomZoneSample_la-CustomZoneSample.Tpo .deps/CustomZoneSample_la-CustomZoneSample.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o CustomZoneSample.la -rpath /usr/local/lib/bzflag CustomZoneSample_la-CustomZoneSample.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+Making all in fairCTF
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT fairCTF_la-fairCTF.lo -MD -MP -MF .deps/fairCTF_la-fairCTF.Tpo -c -o fairCTF_la-fairCTF.lo `test -f 'fairCTF.cpp' || echo './'`fairCTF.cpp
+mv -f .deps/fairCTF_la-fairCTF.Tpo .deps/fairCTF_la-fairCTF.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o fairCTF.la -rpath /usr/local/lib/bzflag fairCTF_la-fairCTF.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+Making all in fastmap
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+depbase=`echo fastmap.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include   -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT fastmap.lo -MD -MP -MF $depbase.Tpo -c -o fastmap.lo fastmap.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o fastmap.la -rpath /usr/local/lib/bzflag fastmap.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+Making all in flagStay
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT flagStay_la-flagStay.lo -MD -MP -MF .deps/flagStay_la-flagStay.Tpo -c -o flagStay_la-flagStay.lo `test -f 'flagStay.cpp' || echo './'`flagStay.cpp
+mv -f .deps/flagStay_la-flagStay.Tpo .deps/flagStay_la-flagStay.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o flagStay.la -rpath /usr/local/lib/bzflag flagStay_la-flagStay.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+Making all in HoldTheFlag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT HoldTheFlag_la-HoldTheFlag.lo -MD -MP -MF .deps/HoldTheFlag_la-HoldTheFlag.Tpo -c -o HoldTheFlag_la-HoldTheFlag.lo `test -f 'HoldTheFlag.cpp' || echo './'`HoldTheFlag.cpp
+mv -f .deps/HoldTheFlag_la-HoldTheFlag.Tpo .deps/HoldTheFlag_la-HoldTheFlag.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o HoldTheFlag.la -rpath /usr/local/lib/bzflag HoldTheFlag_la-HoldTheFlag.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+Making all in keepaway
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT keepaway_la-keepaway.lo -MD -MP -MF .deps/keepaway_la-keepaway.Tpo -c -o keepaway_la-keepaway.lo `test -f 'keepaway.cpp' || echo './'`keepaway.cpp
+mv -f .deps/keepaway_la-keepaway.Tpo .deps/keepaway_la-keepaway.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o keepaway.la -rpath /usr/local/lib/bzflag keepaway_la-keepaway.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+Making all in killall
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT killall_la-killall.lo -MD -MP -MF .deps/killall_la-killall.Tpo -c -o killall_la-killall.lo `test -f 'killall.cpp' || echo './'`killall.cpp
+mv -f .deps/killall_la-killall.Tpo .deps/killall_la-killall.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o killall.la -rpath /usr/local/lib/bzflag killall_la-killall.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+Making all in koth
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT koth_la-koth.lo -MD -MP -MF .deps/koth_la-koth.Tpo -c -o koth_la-koth.lo `test -f 'koth.cpp' || echo './'`koth.cpp
+mv -f .deps/koth_la-koth.Tpo .deps/koth_la-koth.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o koth.la -rpath /usr/local/lib/bzflag koth_la-koth.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+Making all in logDetail
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT logDetail_la-logDetail.lo -MD -MP -MF .deps/logDetail_la-logDetail.Tpo -c -o logDetail_la-logDetail.lo `test -f 'logDetail.cpp' || echo './'`logDetail.cpp
+mv -f .deps/logDetail_la-logDetail.Tpo .deps/logDetail_la-logDetail.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o logDetail.la -rpath /usr/local/lib/bzflag logDetail_la-logDetail.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+Making all in nagware
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT nagware_la-nagware.lo -MD -MP -MF .deps/nagware_la-nagware.Tpo -c -o nagware_la-nagware.lo `test -f 'nagware.cpp' || echo './'`nagware.cpp
+mv -f .deps/nagware_la-nagware.Tpo .deps/nagware_la-nagware.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o nagware.la -rpath /usr/local/lib/bzflag nagware_la-nagware.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+Making all in Phoenix
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT Phoenix_la-Phoenix.lo -MD -MP -MF .deps/Phoenix_la-Phoenix.Tpo -c -o Phoenix_la-Phoenix.lo `test -f 'Phoenix.cpp' || echo './'`Phoenix.cpp
+mv -f .deps/Phoenix_la-Phoenix.Tpo .deps/Phoenix_la-Phoenix.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o Phoenix.la -rpath /usr/local/lib/bzflag Phoenix_la-Phoenix.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+Making all in playHistoryTracker
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT playHistoryTracker_la-playHistoryTracker.lo -MD -MP -MF .deps/playHistoryTracker_la-playHistoryTracker.Tpo -c -o playHistoryTracker_la-playHistoryTracker.lo `test -f 'playHistoryTracker.cpp' || echo './'`playHistoryTracker.cpp
+mv -f .deps/playHistoryTracker_la-playHistoryTracker.Tpo .deps/playHistoryTracker_la-playHistoryTracker.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o playHistoryTracker.la -rpath /usr/local/lib/bzflag playHistoryTracker_la-playHistoryTracker.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+Making all in rabbitTimer
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT rabbitTimer_la-rabbitTimer.lo -MD -MP -MF .deps/rabbitTimer_la-rabbitTimer.Tpo -c -o rabbitTimer_la-rabbitTimer.lo `test -f 'rabbitTimer.cpp' || echo './'`rabbitTimer.cpp
+mv -f .deps/rabbitTimer_la-rabbitTimer.Tpo .deps/rabbitTimer_la-rabbitTimer.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o rabbitTimer.la -rpath /usr/local/lib/bzflag rabbitTimer_la-rabbitTimer.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+Making all in rabidRabbit
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT rabidRabbit_la-rabidRabbit.lo -MD -MP -MF .deps/rabidRabbit_la-rabidRabbit.Tpo -c -o rabidRabbit_la-rabidRabbit.lo `test -f 'rabidRabbit.cpp' || echo './'`rabidRabbit.cpp
+mv -f .deps/rabidRabbit_la-rabidRabbit.Tpo .deps/rabidRabbit_la-rabidRabbit.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o rabidRabbit.la -rpath /usr/local/lib/bzflag rabidRabbit_la-rabidRabbit.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+Making all in recordmatch
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT recordmatch_la-recordmatch.lo -MD -MP -MF .deps/recordmatch_la-recordmatch.Tpo -c -o recordmatch_la-recordmatch.lo `test -f 'recordmatch.cpp' || echo './'`recordmatch.cpp
+mv -f .deps/recordmatch_la-recordmatch.Tpo .deps/recordmatch_la-recordmatch.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o recordmatch.la -rpath /usr/local/lib/bzflag recordmatch_la-recordmatch.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+Making all in regFlag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT regFlag_la-regFlag.lo -MD -MP -MF .deps/regFlag_la-regFlag.Tpo -c -o regFlag_la-regFlag.lo `test -f 'regFlag.cpp' || echo './'`regFlag.cpp
+mv -f .deps/regFlag_la-regFlag.Tpo .deps/regFlag_la-regFlag.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o regFlag.la -rpath /usr/local/lib/bzflag regFlag_la-regFlag.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+Making all in RogueGenocide
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT RogueGenocide_la-RogueGenocide.lo -MD -MP -MF .deps/RogueGenocide_la-RogueGenocide.Tpo -c -o RogueGenocide_la-RogueGenocide.lo `test -f 'RogueGenocide.cpp' || echo './'`RogueGenocide.cpp
+mv -f .deps/RogueGenocide_la-RogueGenocide.Tpo .deps/RogueGenocide_la-RogueGenocide.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o RogueGenocide.la -rpath /usr/local/lib/bzflag RogueGenocide_la-RogueGenocide.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+Making all in SAMPLE_PLUGIN
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.lo -MD -MP -MF .deps/SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.Tpo -c -o SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.lo `test -f 'SAMPLE_PLUGIN.cpp' || echo './'`SAMPLE_PLUGIN.cpp
+mv -f .deps/SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.Tpo .deps/SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o SAMPLE_PLUGIN.la -rpath /usr/local/lib/bzflag SAMPLE_PLUGIN_la-SAMPLE_PLUGIN.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+Making all in serverControl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT serverControl_la-serverControl.lo -MD -MP -MF .deps/serverControl_la-serverControl.Tpo -c -o serverControl_la-serverControl.lo `test -f 'serverControl.cpp' || echo './'`serverControl.cpp
+mv -f .deps/serverControl_la-serverControl.Tpo .deps/serverControl_la-serverControl.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o serverControl.la -rpath /usr/local/lib/bzflag serverControl_la-serverControl.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+Making all in serverSidePlayerSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT serverSidePlayerSample_la-playerHandler.lo -MD -MP -MF .deps/serverSidePlayerSample_la-playerHandler.Tpo -c -o serverSidePlayerSample_la-playerHandler.lo `test -f 'playerHandler.cpp' || echo './'`playerHandler.cpp
+mv -f .deps/serverSidePlayerSample_la-playerHandler.Tpo .deps/serverSidePlayerSample_la-playerHandler.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT serverSidePlayerSample_la-serverSidePlayerSample.lo -MD -MP -MF .deps/serverSidePlayerSample_la-serverSidePlayerSample.Tpo -c -o serverSidePlayerSample_la-serverSidePlayerSample.lo `test -f 'serverSidePlayerSample.cpp' || echo './'`serverSidePlayerSample.cpp
+mv -f .deps/serverSidePlayerSample_la-serverSidePlayerSample.Tpo .deps/serverSidePlayerSample_la-serverSidePlayerSample.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o serverSidePlayerSample.la -rpath /usr/local/lib/bzflag serverSidePlayerSample_la-playerHandler.lo serverSidePlayerSample_la-serverSidePlayerSample.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+Making all in shockwaveDeath
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT shockwaveDeath_la-shockwaveDeath.lo -MD -MP -MF .deps/shockwaveDeath_la-shockwaveDeath.Tpo -c -o shockwaveDeath_la-shockwaveDeath.lo `test -f 'shockwaveDeath.cpp' || echo './'`shockwaveDeath.cpp
+mv -f .deps/shockwaveDeath_la-shockwaveDeath.Tpo .deps/shockwaveDeath_la-shockwaveDeath.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o shockwaveDeath.la -rpath /usr/local/lib/bzflag shockwaveDeath_la-shockwaveDeath.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+Making all in superUser
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include -I../../plugins/plugin_utils  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT superUser_la-superUser.lo -MD -MP -MF .deps/superUser_la-superUser.Tpo -c -o superUser_la-superUser.lo `test -f 'superUser.cpp' || echo './'`superUser.cpp
+mv -f .deps/superUser_la-superUser.Tpo .deps/superUser_la-superUser.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o superUser.la -rpath /usr/local/lib/bzflag superUser_la-superUser.lo ../../plugins/plugin_utils/libplugin_utils.la -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+Making all in teamflagreset
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT teamflagreset_la-teamflagreset.lo -MD -MP -MF .deps/teamflagreset_la-teamflagreset.Tpo -c -o teamflagreset_la-teamflagreset.lo `test -f 'teamflagreset.cpp' || echo './'`teamflagreset.cpp
+mv -f .deps/teamflagreset_la-teamflagreset.Tpo .deps/teamflagreset_la-teamflagreset.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o teamflagreset.la -rpath /usr/local/lib/bzflag teamflagreset_la-teamflagreset.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+Making all in thiefControl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT thiefControl_la-thiefControl.lo -MD -MP -MF .deps/thiefControl_la-thiefControl.Tpo -c -o thiefControl_la-thiefControl.lo `test -f 'thiefControl.cpp' || echo './'`thiefControl.cpp
+mv -f .deps/thiefControl_la-thiefControl.Tpo .deps/thiefControl_la-thiefControl.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o thiefControl.la -rpath /usr/local/lib/bzflag thiefControl_la-thiefControl.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+Making all in timedctf
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT timedctf_la-timedctf.lo -MD -MP -MF .deps/timedctf_la-timedctf.Tpo -c -o timedctf_la-timedctf.lo `test -f 'timedctf.cpp' || echo './'`timedctf.cpp
+mv -f .deps/timedctf_la-timedctf.Tpo .deps/timedctf_la-timedctf.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o timedctf.la -rpath /usr/local/lib/bzflag timedctf_la-timedctf.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+Making all in TimeLimit
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT TimeLimit_la-TimeLimit.lo -MD -MP -MF .deps/TimeLimit_la-TimeLimit.Tpo -c -o TimeLimit_la-TimeLimit.lo `test -f 'TimeLimit.cpp' || echo './'`TimeLimit.cpp
+mv -f .deps/TimeLimit_la-TimeLimit.Tpo .deps/TimeLimit_la-TimeLimit.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o TimeLimit.la -rpath /usr/local/lib/bzflag TimeLimit_la-TimeLimit.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+Making all in wwzones
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H -I. -I../../include  -I../../include  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -MT wwzones_la-wwzones.lo -MD -MP -MF .deps/wwzones_la-wwzones.Tpo -c -o wwzones_la-wwzones.lo `test -f 'wwzones.cpp' || echo './'`wwzones.cpp
+mv -f .deps/wwzones_la-wwzones.Tpo .deps/wwzones_la-wwzones.Plo
+/bin/bash ../../libtool --silent  --tag=CXX  --silent --mode=link g++ -std=c++11 -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -pedantic -fexpensive-optimizations -g -O2 -module -avoid-version -shared  -o wwzones.la -rpath /usr/local/lib/bzflag wwzones_la-wwzones.lo  -lm  -lpthread
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag'

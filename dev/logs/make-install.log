@@ -1,0 +1,468 @@
+Making install in data
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data'
+Making install in l10n
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/bzflag/l10n'
+ /usr/bin/install -c -m 644 bzflag_cs_CZ.po bzflag_da.po bzflag_de.po bzflag_en_US_l33t.po bzflag_en_US_redneck.po bzflag_es.po bzflag_fr.po bzflag_it.po bzflag_kg.po bzflag_lt.po bzflag_nl.po bzflag_pt.po bzflag_ru.po bzflag_sk.po bzflag_sv.po '/usr/local/share/bzflag/l10n'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/l10n'
+Making install in fonts
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/bzflag/fonts'
+ /usr/bin/install -c -m 644 DejaVu.License DejaVuSansCondensedBold_6.fmt DejaVuSansCondensedBold_6.png DejaVuSansCondensedBold_8.fmt DejaVuSansCondensedBold_8.png DejaVuSansCondensedBold_10.fmt DejaVuSansCondensedBold_10.png DejaVuSansCondensedBold_12.fmt DejaVuSansCondensedBold_12.png DejaVuSansCondensedBold_16.fmt DejaVuSansCondensedBold_16.png DejaVuSansCondensedBold_24.fmt DejaVuSansCondensedBold_24.png DejaVuSansCondensedBold_32.fmt DejaVuSansCondensedBold_32.png DejaVuSansCondensedBold_48.fmt DejaVuSansCondensedBold_48.png DejaVuSansCondensedBold_64.fmt DejaVuSansCondensedBold_64.png DejaVuSansMonoBold_6.fmt DejaVuSansMonoBold_6.png DejaVuSansMonoBold_8.fmt DejaVuSansMonoBold_8.png DejaVuSansMonoBold_10.fmt DejaVuSansMonoBold_10.png DejaVuSansMonoBold_12.fmt DejaVuSansMonoBold_12.png DejaVuSansMonoBold_16.fmt DejaVuSansMonoBold_16.png DejaVuSansMonoBold_24.fmt DejaVuSansMonoBold_24.png DejaVuSansMonoBold_32.fmt DejaVuSansMonoBold_32.png DejaVuSansMonoBold_48.fmt DejaVuSansMonoBold_48.png DejaVuSansMonoBold_64.fmt DejaVuSansMonoBold_64.png readme '/usr/local/share/bzflag/fonts'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data/fonts'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/bzflag'
+ /usr/bin/install -c -m 644 automatic_icon.png blue_basetop.png blue_basewall.png blue_bolt.png blue_icon.png blue_laser.png blue_super_bolt.png blue_tank.png blend_flash.png boom.wav bounce.wav boxwall.png bubble.png burrow.wav bzflag.desktop bzflag-256x256.png bzflag-32x32.xpm bzflag-48x48.png caution.png clouds.png dusty_flare.png explode1.png explode2.png explosion.wav fire.wav flag.png flag_alert.wav flag_drop.wav flag_grab.wav flag_lost.wav flag_won.wav flap.wav frog.png green_basetop.png green_basewall.png green_bolt.png green_icon.png green_laser.png green_super_bolt.png green_tank.png '/usr/local/share/bzflag'
+ /usr/bin/install -c -m 644 hunt.wav hunt_select.wav hunter_bolt.png hunter_laser.png hunter_super_bolt.png hunter_tank.png jump.wav jumpjets.png killteam.wav land.wav laser.wav lock.wav menu_arrow.png mesh.png message_admin.wav message_private.wav message_team.wav missile.png missile.wav moon.png mountain1.png mountain2.png mountain3.png mountain4.png mountain5.png observer_icon.png phantom.wav pop.wav puddle.png puffs.png purple_basetop.png purple_basewall.png purple_bolt.png purple_icon.png purple_laser.png purple_super_bolt.png purple_tank.png pyrwall.png rabbit_bolt.png rabbit_laser.png '/usr/local/share/bzflag'
+ /usr/bin/install -c -m 644 rabbit_super_bolt.png rabbit_tank.png radar.png raindrop.png red_basetop.png red_basewall.png red_bolt.png red_icon.png red_laser.png red_super_bolt.png red_tank.png ricochet.wav roof.png rogue_bolt.png rogue_icon.png rogue_laser.png rogue_super_bolt.png rogue_tank.png shock.wav shot_tail.png snowflake.png spree1.wav spree2.wav spree3.wav spree4.wav std_ground.png steamroller.wav teamgrab.wav telelink.png teleport.wav tetrawall.png thief.png thief.wav title.png treads.png wall.png water.png zone_ground.png '/usr/local/share/bzflag'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/data'
+Making install in include
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/include'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/include'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/include'
+Making install in man
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/man'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/man/man5'
+ /usr/bin/install -c -m 644 bzw.5 '/usr/local/share/man/man5'
+ /usr/bin/mkdir -p '/usr/local/share/man/man6'
+ /usr/bin/install -c -m 644 bzadmin.6 bzflag.6 bzfs.6 '/usr/local/share/man/man6'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/man'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/man'
+Making install in package
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/package'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/package'
+Making install in src
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src'
+Making install in 3D
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/3D'
+Making install in common
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/common'
+Making install in net
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/net'
+Making install in game
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/game'
+Making install in geometry
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+Making install in models
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+Making install in tank
+make[4]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+make[5]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+make[4]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models/tank'
+make[4]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[5]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[4]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry/models'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+make[4]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/geometry'
+Making install in obstacle
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/obstacle'
+Making install in ogl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/ogl'
+Making install in scene
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/scene'
+Making install in platform
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/platform'
+Making install in mediafile
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/mediafile'
+Making install in date
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/date'
+Making install in bzfs
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c bzfs '/usr/local/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzfs'
+Making install in bzflag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c bzflag '/usr/local/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzflag'
+Making install in bzadmin
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c bzadmin '/usr/local/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src/bzadmin'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/src'
+Making install in plugins
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+Making install in plugin_utils
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/plugin_utils'
+Making install in airspawn
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   airspawn.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/airspawn'
+Making install in autoFlagReset
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   autoFlagReset.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/autoFlagReset'
+Making install in bzfscron
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   bzfscron.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/bzfscron'
+Making install in chathistory
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   chathistory.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/chathistory'
+Making install in customflagsample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   customflagsample.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customflagsample'
+Making install in customPollTypeSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   customPollTypeSample.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/customPollTypeSample'
+Making install in CustomZoneSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   CustomZoneSample.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/CustomZoneSample'
+Making install in fairCTF
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   fairCTF.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fairCTF'
+Making install in fastmap
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   fastmap.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/fastmap'
+Making install in flagStay
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   flagStay.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/flagStay'
+Making install in HoldTheFlag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   HoldTheFlag.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/HoldTheFlag'
+Making install in keepaway
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   keepaway.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/keepaway'
+Making install in killall
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   killall.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/killall'
+Making install in koth
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   koth.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/koth'
+Making install in logDetail
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   logDetail.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/logDetail'
+Making install in nagware
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   nagware.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/nagware'
+Making install in Phoenix
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   Phoenix.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/Phoenix'
+Making install in playHistoryTracker
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   playHistoryTracker.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/playHistoryTracker'
+Making install in rabbitTimer
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   rabbitTimer.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabbitTimer'
+Making install in rabidRabbit
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   rabidRabbit.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/rabidRabbit'
+Making install in recordmatch
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   recordmatch.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/recordmatch'
+Making install in regFlag
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   regFlag.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/regFlag'
+Making install in RogueGenocide
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   RogueGenocide.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/RogueGenocide'
+Making install in SAMPLE_PLUGIN
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   SAMPLE_PLUGIN.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/SAMPLE_PLUGIN'
+Making install in serverControl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   serverControl.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverControl'
+Making install in serverSidePlayerSample
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   serverSidePlayerSample.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/serverSidePlayerSample'
+Making install in shockwaveDeath
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   shockwaveDeath.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/shockwaveDeath'
+Making install in superUser
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   superUser.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/superUser'
+Making install in teamflagreset
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   teamflagreset.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/teamflagreset'
+Making install in thiefControl
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   thiefControl.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/thiefControl'
+Making install in timedctf
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   timedctf.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/timedctf'
+Making install in TimeLimit
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   TimeLimit.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/TimeLimit'
+Making install in wwzones
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+ /usr/bin/mkdir -p '/usr/local/lib/bzflag'
+ /bin/bash ../../libtool --silent  --silent --mode=install /usr/bin/install -c   wwzones.la '/usr/local/lib/bzflag'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins/wwzones'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[3]: Entering directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag/plugins'
+make[1]: Entering directory '/workspaces/BZFlag-Dev-bzflag'
+make[2]: Entering directory '/workspaces/BZFlag-Dev-bzflag'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspaces/BZFlag-Dev-bzflag'
+make[1]: Leaving directory '/workspaces/BZFlag-Dev-bzflag'

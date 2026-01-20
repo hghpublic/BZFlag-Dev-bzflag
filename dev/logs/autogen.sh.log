@@ -1,0 +1,11 @@
+Preparing the BZFlag build system...please wait
+
+Found GNU Autoconf version 2.71
+Found GNU Automake version 1.16.5
+Found GNU Libtool version 2.4.7
+
+Automatically preparing build ... done
+
+The BZFlag build system is now prepared.  To build here, run:
+  ./configure
+  make
