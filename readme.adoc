@@ -1,0 +1,38 @@
+= bzflag
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+== bzflag
+
+https://github.com/BZFlag-Dev/bzflag
+
+https://github.com/hghpublic/BZFlag-Dev-bzflag
+
+=== Building from Source
+
+[source, shell]
+----
+./autogen.sh
+./configure
+make
+----
+
+[source, shell]
+----
+./autogen.sh > dev/logs/autogen.sh.log 2>&1
+./configure > dev/logs/configure.log 2>&1
+make > dev/logs/make.log 2>&1
+sudo make install > dev/logs/make-install.log 2>&1
+----
